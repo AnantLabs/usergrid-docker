@@ -15,7 +15,7 @@
 
 # build usergrid from source
 
-FROM yep1/usergrid-java
+FROM usergrid-java
 
 WORKDIR /root
 ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
@@ -32,9 +32,9 @@ RUN \
   sed -i "s#/usr/lib/jvm/java-7-oracle#/usr/lib/jvm/java-7-oracle /usr/lib/jvm/java-8-oracle#g" /etc/init.d/tomcat7 && \
   \
   echo "+++ get usergrid source, set logging level" && \
-  git clone --single-branch --branch master --depth 50 https://github.com/apache/usergrid.git usergrid && \
+  git clone https://github.com/apache/usergrid.git usergrid && \
   cd usergrid && \
-  git checkout c6945e3d6f608d1333c269657eb47064866d3e0b && \
+  git checkout remotes/origin/2.1.0 && \
   grep -rl log4j.rootLogger=INFO stack | xargs sed -i 's#log4j.rootLogger=INFO#log4j.rootLogger=WARN#g' && \
   \
   echo "+++ build usergrid" && \
@@ -52,6 +52,10 @@ RUN \
   rm -rf /var/lib/apt/lists/* && \
   rm -rf /root/usergrid
 
+COPY run.sh /root/run.sh
+RUN chmod 777 /root/run.sh
+RUN sed -i -e 's/\r$//' /root/run.sh
+
 # default command when starting container with "docker run"
 CMD /root/run.sh
 
@@ -61,4 +65,5 @@ CMD /root/run.sh
 EXPOSE 8080 8443
 
 # runtime configuration script: since this is updated frequently during development, add it last
-COPY run.sh /root/run.sh
+#COPY run.sh /root/run.sh
+#RUN sed -i -e 's/\r$//' /root/run.sh

@@ -1,0 +1,40 @@
+[2019-04-04 22:07:51,995][INFO ][node                     ] [Forge] version[1.7.4], pid[1], build[0d3159b/2015-12-15T11:25:18Z]
+[2019-04-04 22:07:51,995][INFO ][node                     ] [Forge] initializing ...
+[2019-04-04 22:07:52,105][INFO ][plugins                  ] [Forge] loaded [], sites []
+[2019-04-04 22:07:52,153][INFO ][env                      ] [Forge] using [1] data paths, mounts [[/data (/dev/vda1)]], net usable_space [18.6gb], net total_space [24gb], types [ext4]
+[2019-04-04 22:07:54,291][INFO ][node                     ] [Forge] initialized
+[2019-04-04 22:07:54,291][INFO ][node                     ] [Forge] starting ...
+[2019-04-04 22:07:54,508][INFO ][transport                ] [Forge] bound_address {inet[/0.0.0.0:9300]}, publish_address {inet[/172.17.0.2:9300]}
+[2019-04-04 22:07:54,526][INFO ][discovery                ] [Forge] elasticsearch/sFtwF2bIQwi1OM2QZ4z7cQ
+[2019-04-04 22:07:58,306][INFO ][cluster.service          ] [Forge] new_master [Forge][sFtwF2bIQwi1OM2QZ4z7cQ][3e03b4e656b8][inet[/172.17.0.2:9300]], reason: zen-disco-join (elected_as_master)
+[2019-04-04 22:07:58,340][INFO ][http                     ] [Forge] bound_address {inet[/0.0.0.0:9200]}, publish_address {inet[/172.17.0.2:9200]}
+[2019-04-04 22:07:58,340][INFO ][node                     ] [Forge] started
+[2019-04-04 22:07:58,356][INFO ][gateway                  ] [Forge] recovered [0] indices into cluster_state
+[2019-04-04 22:14:40,458][INFO ][cluster.service          ] [Forge] added {[default][xBuqs66qQjuIaL1IZ_vD5g][bc460e10b2e3][inet[/172.17.0.4:9300]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[default][xBuqs66qQjuIaL1IZ_vD5g][bc460e10b2e3][inet[/172.17.0.4:9300]]{client=true, data=false}])
+[2019-04-04 22:14:42,350][INFO ][cluster.metadata         ] [Forge] [usergrid_usergrid_applications_management] creating index, cause [api], templates [], shards [18]/[1], mappings []
+[2019-04-04 22:14:42,620][INFO ][cluster.metadata         ] [Forge] [usergrid_usergrid_applications_management] create_mapping [entity]
+[2019-04-04 22:14:48,394][INFO ][cluster.metadata         ] [Forge] [usergrid_applications_1] creating index, cause [api], templates [], shards [18]/[1], mappings []
+[2019-04-04 22:14:48,556][INFO ][cluster.metadata         ] [Forge] [usergrid_applications_1] create_mapping [entity]
+[2019-04-04 22:14:49,020][INFO ][cluster.metadata         ] [Forge] [usergrid_applications_4] creating index, cause [api], templates [], shards [18]/[1], mappings []
+[2019-04-04 22:14:49,188][INFO ][cluster.metadata         ] [Forge] [usergrid_applications_4] create_mapping [entity]
+[2019-04-04 22:15:18,337][INFO ][node                     ] [Forge] stopping ...
+[2019-04-04 22:15:18,528][INFO ][node                     ] [Forge] stopped
+[2019-04-04 22:15:18,528][INFO ][node                     ] [Forge] closing ...
+[2019-04-04 22:15:18,532][INFO ][node                     ] [Forge] closed
+[2019-04-04 22:15:41,923][INFO ][node                     ] [Piper] version[1.7.4], pid[1], build[0d3159b/2015-12-15T11:25:18Z]
+[2019-04-04 22:15:41,924][INFO ][node                     ] [Piper] initializing ...
+[2019-04-04 22:15:41,978][INFO ][plugins                  ] [Piper] loaded [], sites []
+[2019-04-04 22:15:42,003][INFO ][env                      ] [Piper] using [1] data paths, mounts [[/data (/dev/vda1)]], net usable_space [18.5gb], net total_space [24gb], types [ext4]
+[2019-04-04 22:15:43,829][INFO ][node                     ] [Piper] initialized
+[2019-04-04 22:15:43,830][INFO ][node                     ] [Piper] starting ...
+[2019-04-04 22:15:44,006][INFO ][transport                ] [Piper] bound_address {inet[/0.0.0.0:9300]}, publish_address {inet[/172.17.0.3:9300]}
+[2019-04-04 22:15:44,021][INFO ][discovery                ] [Piper] elasticsearch/1nnxo9AoTXquHHzRQSBOIw
+[2019-04-04 22:15:47,789][INFO ][cluster.service          ] [Piper] new_master [Piper][1nnxo9AoTXquHHzRQSBOIw][5b1d7dc0716c][inet[/172.17.0.3:9300]], reason: zen-disco-join (elected_as_master)
+[2019-04-04 22:15:47,862][INFO ][http                     ] [Piper] bound_address {inet[/0.0.0.0:9200]}, publish_address {inet[/172.17.0.3:9200]}
+[2019-04-04 22:15:47,874][INFO ][node                     ] [Piper] started
+[2019-04-04 22:15:47,889][INFO ][gateway                  ] [Piper] recovered [3] indices into cluster_state
+[2019-04-04 22:15:56,518][INFO ][cluster.service          ] [Piper] added {[default][KKWz2mMwTIOFBQYw6Er9Tg][bf330cf21fb4][inet[/172.17.0.4:9300]]{client=true, data=false},}, reason: zen-disco-receive(join from node[[default][KKWz2mMwTIOFBQYw6Er9Tg][bf330cf21fb4][inet[/172.17.0.4:9300]]{client=true, data=false}])
+[2019-04-04 22:23:23,385][INFO ][node                     ] [Piper] stopping ...
+[2019-04-04 22:23:23,508][INFO ][node                     ] [Piper] stopped
+[2019-04-04 22:23:23,508][INFO ][node                     ] [Piper] closing ...
+[2019-04-04 22:23:23,519][INFO ][node                     ] [Piper] closed

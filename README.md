@@ -16,6 +16,31 @@ To see how the containers can be started, have a look at the `provision.sh` scri
 Local testing using [Vagrant](http://vagrantup.com) and deployment to [Amazon Web Services (AWS)](http://aws.amazon.com) are supported, see below.
 
 
+Build and run on Docker
+---------------
+
+Instead of using Vagrant, you can use Docker directly. If you are not using Linux on your development machine, it is recommended to install the [Docker Toolbox](https://www.docker.com/products/overview#/docker_toolbox).
+
+The examples below use the automated builds from the [Docker Hub](https://hub.docker.com).
+
+Build the containers manually instead of using the automated builds.
+
+Get the submodules first:
+
+    git clone https://github.com/yep/usergrid-docker.git
+    cd usergrid-docker
+    git submodule update --init
+    ./build.sh 
+    
+Run the containers (makes ~/data/ directory for cassandra / elasticsearch data)
+
+    ./run.sh
+    
+Stop and clean the containers.
+
+    ./clean.sh 
+    
+
 Run on Vagrant
 ---------------
 

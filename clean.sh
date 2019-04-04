@@ -1,4 +1,4 @@
 #!/bin/bash
 
-docker stop cassandra elasticsearch usergrid usergrid-portal
-docker rm cassandra elasticsearch usergrid usergrid-portal
+docker stop cassandra elasticsearch usergrid portal
+docker rm cassandra elasticsearch usergrid portal
